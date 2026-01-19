@@ -1,0 +1,572 @@
+/* 1. Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #fff;
+    color: #000;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* 2. Barra negra superior */
+.barraSuperior {
+    background-color: #383838;
+    color: white;
+    padding: 12px 40px;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.contenidoPromo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.enlaceDer {
+    color: white;
+}
+
+.enlaceDer i {
+    font-size: 8px;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
+/* 3. Header */
+header {
+    padding: 20px 50px 10px 50px;
+    width: 100%;
+    background: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+
+.barraUtilidades {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.contenedorBusqueda {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+    margin-right: 35px;
+    width: 220px;
+}
+
+.contenedorBusqueda i {
+    font-size: 14px;
+    color: #333;
+    margin-right: 10px;
+}
+
+.contenedorBusqueda input {
+    border: none;
+    outline: none;
+    font-size: 11px;
+    color: #666;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.iconosUsuario a {
+    color: #444;
+    font-size: 11px;
+    text-transform: uppercase;
+    margin-left: 25px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+
+.iconosUsuario i {
+    font-size: 14px;
+    margin-right: 6px;
+    vertical-align: text-bottom;
+}
+
+.contadorCarrito {
+    vertical-align: top;
+    font-size: 9px;
+    margin-left: 2px;
+}
+
+/* Logo y navegación */
+.cabeceraPrincipal {
+    display: flex;
+    align-items: baseline;
+    padding-bottom: 0px;
+    margin-top: -5px;
+}
+
+.logo {
+    font-family: 'Arial', sans-serif;
+    font-size: 46px;
+    font-weight: 900;
+    letter-spacing: -2px;
+    margin-right: 60px;
+    color: #000;
+    cursor: pointer;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin-right: 32px;
+}
+
+nav ul li a {
+    color: #555;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #000;
+}
+
+/* 4. Banner principal */
+.bannerPrincipal {
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+}
+
+.imgFondoBanner {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.contenidoBanner {
+    position: relative;
+    z-index: 1;
+    padding: 0 0 60px 60px;
+    color: white;
+}
+
+.contenidoBanner h1 {
+    font-size: 48px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+    text-shadow: 0px 2px 10px rgba(0,0,0,0.3);
+}
+
+.contenidoBanner p {
+    font-size: 15px;
+    font-weight: 300;
+    margin-bottom: 30px;
+    opacity: 0.9;
+    text-shadow: 0px 2px 10px rgba(0,0,0,0.3);
+}
+
+.botonCompra {
+    display: inline-block;
+    border: 1px solid white;
+    color: white;
+    padding: 14px 40px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.botonCompra:hover {
+    background-color: white;
+    color: black;
+}
+
+/* 5. Segunda sección */
+.seccionDividida {
+    display: flex;
+    width: 100%;
+    height: 85vh;
+}
+
+.panelMitad {
+    width: 50%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+}
+
+.imgFondo {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.contenidoPanel {
+    position: relative;
+    z-index: 1;
+    padding: 0 0 50px 50px;
+    color: white;
+    max-width: 80%;
+}
+
+.etiquetaNuevo {
+    display: block;
+    font-size: 10px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.contenidoPanel h3 {
+    font-size: 28px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 8px;
+    line-height: 1.2;
+}
+
+.contenidoPanel p {
+    font-size: 13px;
+    font-weight: 300;
+    margin-bottom: 25px;
+    opacity: 0.9;
+}
+
+.botonCompraPeque {
+    display: inline-block;
+    border: 1px solid white;
+    color: white;
+    padding: 10px 30px;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.botonCompraPeque:hover {
+    background-color: white;
+    color: black;
+}
+
+/* 6. Tercera sección */
+.bannerSecundario {
+    width: 100%;
+    height: 70vh;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+}
+
+.imgFondoSecundario {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.contenidoSecundario {
+    position: relative;
+    z-index: 1;
+    padding: 0 0 50px 60px;
+    color: white;
+    max-width: 600px;
+}
+
+.contenidoSecundario h2 {
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+}
+
+.contenidoSecundario p {
+    font-size: 13px;
+    font-weight: 300;
+    margin-bottom: 25px;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+}
+
+.botonTransparente {
+    display: inline-block;
+    border: 1px solid white;
+    color: white;
+    padding: 12px 35px;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.botonTransparente:hover {
+    background-color: white;
+    color: black;
+}
+
+/* 7. Cuarta sección */
+.seccionTriptico {
+    display: flex;
+    width: 100%;
+    height: 500px;
+}
+
+.columnaPromo {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+}
+
+.imgFondoCol {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    transition: transform 0.5s ease;
+}
+
+.columnaPromo:hover .imgFondoCol {
+    transform: scale(1.05);
+}
+
+.contenidoCol {
+    position: relative;
+    z-index: 1;
+    color: white;
+    padding: 0 0 40px 40px;
+    width: 90%;
+}
+
+.contenidoCol h3 {
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    text-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
+
+.contenidoCol p {
+    font-size: 12px;
+    margin-bottom: 20px;
+    text-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
+
+.botonBorde {
+    display: inline-block;
+    border: 1px solid white;
+    color: white;
+    padding: 10px 25px;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.botonBorde:hover {
+    background: white;
+    color: black;
+}
+
+/* 8. Pie de página */
+.piePagina {
+    background-color: white;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.contenedorEnlacesPie {
+    display: flex;
+    gap: 100px;
+}
+
+.columnaLista h4 {
+    font-size: 11px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.columnaLista ul {
+    list-style: none;
+}
+
+.columnaLista ul li {
+    margin-bottom: 12px;
+}
+
+.columnaLista ul li a {
+    color: #666;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.columnaLista ul li a:hover {
+    text-decoration: underline;
+}
+
+.margenArriba {
+    margin-top: 20px;
+}
+
+.barraInferior {
+    border-top: 1px solid #e5e5e5;
+    padding: 25px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+}
+
+.inferiorIzq {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.logoPie {
+    font-family: 'Arial Black', sans-serif;
+    font-weight: 900;
+    font-size: 16px;
+    letter-spacing: -1px;
+}
+
+.redesSociales a {
+    color: #000;
+    margin-right: 15px;
+    font-size: 14px;
+}
+
+.inferiorDer {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 10px;
+    color: #666;
+}
+
+.enlaceAccesibilidad {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+/* 9. Responsivo para el celular */
+@media (max-width: 768px) {
+    .barraSuperior,
+    .barraUtilidades {
+        display: none;
+    }
+
+    .cabeceraPrincipal {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0;
+        padding-bottom: 10px;
+        position: relative;
+    }
+
+    .logo {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    nav ul {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    nav ul li {
+        margin-right: 0;
+    }
+
+    .contenidoBanner {
+        padding: 0 0 40px 20px;
+    }
+
+    .contenidoBanner h1 {
+        font-size: 32px;
+    }
+
+    .seccionDividida {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .panelMitad {
+        width: 100%;
+        height: 50vh;
+    }
+
+    .bannerSecundario {
+        height: 50vh;
+    }
+
+    .contenidoSecundario h2 {
+        font-size: 24px;
+    }
+
+    .seccionTriptico {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .columnaPromo {
+        height: 400px;
+        width: 100%;
+    }
+
+    .contenedorEnlacesPie {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .barraInferior {
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-start;
+    }
+}
